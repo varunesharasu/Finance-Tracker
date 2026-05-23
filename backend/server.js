@@ -16,12 +16,18 @@ const app = express();
 connectDB();
 
 // CORS configuration
+const envOrigins = process.env.FRONTEND_URLS
+  ? process.env.FRONTEND_URLS.split(',').map((url) => url.trim())
+  : [];
+
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5000',
   'https://finance-tracker-k997.vercel.app',
   'https://finance-tracker-k997-git-main-varunesh-ts-projects.vercel.app',
+  'https://finance-tracker-delta-one.vercel.app',
   process.env.FRONTEND_URL, // Add your actual frontend URL via environment variable
+  ...envOrigins,
 ].filter(Boolean);
 
 const corsOptions = {
