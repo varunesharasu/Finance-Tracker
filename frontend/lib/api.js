@@ -7,7 +7,7 @@ const API_BASE_URL = normalizedBaseUrl
   ? normalizedBaseUrl.endsWith('/api')
     ? normalizedBaseUrl
     : `${normalizedBaseUrl}/api`
-  : 'http://localhost:5000/api';
+  : 'https://finance-tracker-6li5.onrender.com';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
