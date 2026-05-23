@@ -18,16 +18,20 @@ pnpm install
 
 ### 2. Environment Configuration
 
-The `.env` file is already configured with your MongoDB connection string. The current settings are:
+Create a `.env` file in the backend directory with the following variables:
 
 ```
-MONGODB_URI=mongodb+srv://varunesh:varunesh@cluster1.lvoka.mongodb.net/finance-tracker?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@your-cluster.mongodb.net/finance-tracker?retryWrites=true&w=majority
 PORT=5000
 NODE_ENV=development
 JWT_SECRET=your_jwt_secret_key_change_this_in_production
 ```
 
-**Note:** For production, change the `JWT_SECRET` to a strong, random value.
+**Important:** 
+- Replace `username`, `password`, and `your-cluster` with your actual MongoDB Atlas credentials
+- Store the `.env` file locally and never commit it to version control
+- For production, use a strong, random value for `JWT_SECRET`
+- Add `.env` to your `.gitignore` file to prevent accidental commits
 
 ### 3. Run the Backend
 
