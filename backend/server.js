@@ -19,6 +19,7 @@ connectDB();
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5000',
+  'https://finance-tracker-k997.vercel.app',
   'https://finance-tracker-k997-git-main-varunesh-ts-projects.vercel.app',
   process.env.FRONTEND_URL, // Add your actual frontend URL via environment variable
 ].filter(Boolean);
