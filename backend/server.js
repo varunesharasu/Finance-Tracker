@@ -15,8 +15,29 @@ const app = express();
 // Connect to database
 connectDB();
 
+// CORS configuration
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:5000',
+  'https://finance-tracker-k997-git-main-varunesh-ts-projects.vercel.app',
+  process.env.FRONTEND_URL, // Add your actual frontend URL via environment variable
+].filter(Boolean);
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
