@@ -1,8 +1,12 @@
 import axios from 'axios';
 
 // Use environment variable with fallback for development
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL 
-  ? `${process.env.NEXT_PUBLIC_API_URL}/api`
+const rawBaseUrl = process.env.NEXT_PUBLIC_API_URL;
+const normalizedBaseUrl = rawBaseUrl ? rawBaseUrl.replace(/\/+$/, '') : '';
+const API_BASE_URL = normalizedBaseUrl
+  ? normalizedBaseUrl.endsWith('/api')
+    ? normalizedBaseUrl
+    : `${normalizedBaseUrl}/api`
   : 'http://localhost:5000/api';
 
 const apiClient = axios.create({
