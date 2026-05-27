@@ -223,10 +223,4 @@ Fin/
    - Use Recharts to visualize spending
    - Category breakdown
 
----
-
-## 📞 Support
-
-See `AUTHENTICATION_SETUP.md` for detailed API documentation and examples.
-
 **Everything is set up!** 🎉
