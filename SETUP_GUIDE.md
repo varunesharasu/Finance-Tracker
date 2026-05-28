@@ -176,25 +176,5 @@ Fin/
 ### "Data not saving"
 - ✅ Check network tab (F12 → Network) for failed requests
 - ✅ Verify MongoDB connection string in `.env`
-- ✅ Check backend terminal for database errors
-
----
-
-## 📚 Files Created/Modified
-
-### New Files
-- ✅ `Fin/lib/api.js` - API client
-- ✅ `Fin/lib/auth-context.jsx` - Auth state
-- ✅ `Fin/app/login/page.tsx` - Login page
-- ✅ `Fin/app/register/page.tsx` - Register page
-- ✅ `Fin/components/user-nav.tsx` - User menu
-- ✅ `Fin/components/navbar.tsx` - Header
-- ✅ `Fin/components/protected-route.tsx` - Route protection
-- ✅ `Fin/AUTHENTICATION_SETUP.md` - Detailed docs
-
-### Modified Files
-- ✅ `Fin/app/layout.tsx` - Added AuthProvider
-- ✅ `Fin/app/page.tsx` - Made protected route
-- ✅ `Fin/components/dashboard-page.tsx` - Added navbar
-- ✅ `Fin/components/add-transaction-form.tsx` - Backend integration
+- ✅ Check backend terminal for database errors-transaction-form.tsx` - Backend integration
 - ✅ `Fin/package.json` - Added axios
