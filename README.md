@@ -45,15 +45,7 @@ Frontend is configured to deploy on Vercel with environment-based API URLs:
 - Local: `http://localhost:5000/api`
 - Production: `https://finance-tracker-6li5.onrender.com/api`
 
-### Backend
 
-```bash
-cd backend
-npm install
-npm start
-```
-
-Deployed at: https://finance-tracker-6li5.onrender.com
 
 ## Features
 
