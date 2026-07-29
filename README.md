@@ -41,12 +41,6 @@ npm install
 npm run dev
 ```
 
-Frontend is configured to deploy on Vercel with environment-based API URLs:
-- Local: `http://localhost:5000/api`
-- Production: `https://finance-tracker-6li5.onrender.com/api`
-
-
-
 ## Features
 
 - User authentication (Login/Register)
