@@ -31,8 +31,6 @@ Finance-Tracker/
     └── SETUP_GUIDE.md
 ```
 
-## Getting Started
-
 ## Features
 
 - User authentication (Login/Register)
