@@ -35,12 +35,6 @@ Finance-Tracker/
 
 ### Frontend (Vercel Deployment Ready)
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
 ## Features
 
 - User authentication (Login/Register)
