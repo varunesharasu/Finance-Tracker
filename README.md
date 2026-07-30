@@ -33,8 +33,6 @@ Finance-Tracker/
 
 ## Getting Started
 
-### Frontend (Vercel Deployment Ready)
-
 ## Features
 
 - User authentication (Login/Register)
